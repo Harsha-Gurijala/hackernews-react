@@ -1,0 +1,22 @@
+.stories-ol, .fake-stories-ul {
+    max-width: 1500px;
+    margin: 1.5em auto 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 650px));
+    column-gap: 1.3em;
+    row-gap: 1em;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.stories-li {
+    margin: 0;
+}
+
+@media only screen and (min-width: 1340px) {
+    
+    .stories-ol, .fake-stories-ul {
+        row-gap: 1.5em;
+    }
+}

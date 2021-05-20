@@ -1,0 +1,199 @@
+.story, .fake-story {
+    background: rgb(168, 230, 255);
+    border-radius: 6px;
+    border: 1px solid rgb(168, 230, 255);
+    padding: 0 10px;
+    transition: .5s ease;
+}
+
+.dark-story {
+    background: rgb(40, 40, 42);
+    border: 1px solid rgb(40, 40, 42);
+}
+
+/* story title link and short url part*/
+.story-top-wrap {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(244, 249, 255);
+    border-radius: 3px;
+    padding: 10px;
+    word-wrap: break-word;
+    transition: .5s ease;
+}
+
+.top-wrap-dark {
+    background: rgb(55, 55, 57);
+}
+
+.story-top-wrap > h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.story-num {
+    margin: 0 5px 0 0;
+    padding: 5px 0;
+    font-size: 16px;
+    color: rgb(114, 119, 131);
+    text-align: right;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+.dark-story-num {
+    color: rgb(110, 110, 113);
+}
+
+.title-link {
+   text-decoration: none;
+   color: rgb(1, 29, 185);
+   transition: .3s ease;
+}
+
+.title-link:hover {
+    color: rgb(57, 86, 247);
+}
+
+.dark-link {
+    color: rgb(91, 167, 255);
+}
+
+.dark-link:hover {
+    color: rgb(35, 137, 255);
+}
+
+.short-url {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: .03em;
+    margin: 8px 0 0 0;
+    font-weight: bold;
+    color: rgb(75, 75, 78);
+    transition: .5s ease;
+
+}
+
+.dark-short-url {
+    color: rgb(215, 215, 217)
+}
+/* end of story title link and short url part*/
+
+
+/* story score, user, comments part*/
+.story-bottom-wrap {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: .03em;
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0;
+    color: rgb(81, 81, 83);
+    transition: .5s ease;
+}
+
+.bot-wrap-dark {
+    color: rgb(245, 245, 247);
+}
+
+.small-wrap-one, .small-wrap-two {
+    display: flex;
+    align-items: center;
+    margin: .35em 0;
+}
+
+.small-wrap-one > p,
+.small-wrap-two > p {
+    margin: 0 7px 0 0;
+    padding: 4px 10px 3px 10px;
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+    transition: .5s ease;
+}
+
+.bot-wrap-dark .small-wrap-one > p,
+.bot-wrap-dark .small-wrap-two > p {
+    color: rgb(220, 220, 223);
+    background: rgb(57, 57, 59);
+
+}
+
+
+.story-comments-link {
+    text-decoration: none;
+    margin-left: 3px;
+}
+
+.link-disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.no-comments {
+    color: rgb(111, 118, 128);
+    transition: .5s ease;
+    font-size: 15px;
+    margin: 0 0 0 3px;
+}
+
+.dark-no-comments {
+    color: rgb(130, 130, 130);
+}
+
+.comments-exist {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 0 0 0;
+    color: rgb(235, 112, 81);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.comments-exist:hover{
+    color: rgb(247, 141, 114);
+}
+
+.dark-comments-exist {
+    color: rgb(253, 169, 148);
+}
+
+.dark-comments-exist:hover {
+    color: rgb(255, 128, 96);
+}
+/* end of story score, user, comments part*/
+
+
+@media only screen and (min-width: 1340px) {
+
+    .story-top-wrap > h2 {
+        height: 53px;
+        font-size: 17px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .story-num {
+        font-size: 17px;
+    }
+
+    .short-url {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .story-bottom-wrap {
+        flex-direction: row;
+        padding: 8px 0;
+    }
+
+    .small-wrap-one, .small-wrap-two {
+        margin: .5em 0;
+    }
+
+    .small-wrap-one > p,
+    .small-wrap-two > p{
+        /*2002 is unicode for two white spaces (same as &ensp;)*/
+        margin: 3px 7px 3px 0;
+        padding: 5px 10px 4px 10px;
+    }
+}
+

@@ -1,0 +1,44 @@
+.fake-comment {
+    width: 98%;
+    height: 135px;
+    position: relative;
+    margin: 0 0 10px 0;
+    border-radius: 7px;
+    background-color:rgb(236, 249, 255);
+    border: 1px solid rgb(236, 249, 255);
+}
+
+.fake-comment-dark {
+    background-color: rgb(35, 35, 37);
+    border: 1px solid rgb(35, 35, 37);
+}
+
+.fake-comment::before, .fake-comment::after {
+    content: '';
+    position: absolute;
+}
+
+.fake-comment::before {
+    top: 10%;
+    left: 1%;
+    width: 370px;
+    max-width: 85%;
+    height: 20%;
+    background-color: rgb(192, 208, 221);
+}
+
+.fake-comment-dark::before {
+    background-color: rgb(81, 89, 94);
+}
+
+.fake-comment::after {
+    bottom: 10%;
+    left: 1%;
+    width: 98%;
+    height: 45%;
+    background-color: rgb(175, 184, 192);
+}
+
+.fake-comment-dark::after {
+    background-color: rgb(111, 119, 126);
+}

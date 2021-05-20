@@ -1,0 +1,17 @@
+.story-comments-ul {
+    padding: 0;
+    margin: 0;
+}
+
+.story-comments-li {
+    list-style: none;
+    margin: 0 0 0 5px; 
+    padding: 0;
+}
+
+@media only screen and (min-width: 1340px) {
+
+    .story-comments-li {
+        margin: 0 0 0 15px;
+    }
+}

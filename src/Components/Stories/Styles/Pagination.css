@@ -1,0 +1,70 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.pagin-disable {
+    pointer-events: none;
+    opacity: 35%;
+}
+
+.pagination-ol {
+    list-style: none;
+    padding: 0;
+}
+
+.pagin-numbers {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    font-size: 17px;
+    color: rgb(241, 241, 241);
+    background: rgb(23, 116, 192);
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    /*Make the element content be centered vertically: */
+    line-height: 33px;
+    text-align: center;
+    margin: 5px 2px;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+.pagin-numbers:hover {
+    background:  rgb(125, 194, 250);
+}
+
+.pagin-num-selected {
+    color: rgb(30, 30, 30);
+    background: rgb(149, 196, 235);
+    pointer-events: none;
+}
+
+.three-dots {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(130, 130, 130);
+    font-size: 30px;
+    width: 24px;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    cursor: context-menu;
+    user-select: none;
+    margin: 0;
+}
+
+@media only screen and (min-width: 1344px) {
+    .pagin-numbers {
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 5px 3px;
+    }
+
+    .three-dots {
+        width: 32px;
+    }
+}

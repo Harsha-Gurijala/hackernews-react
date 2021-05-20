@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(240, 240, 242);
+    transition: background-color .4s ease;
+}
+
+.app-wrapper {
+    background-color: rgb(240, 240, 242);
+    transition: background-color .5s ease;
+}
+
+.app-dark {
+    background-color: rgb(30, 30, 31);
+}
+
+main {
+    margin: 0 10px;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.url-no-match {
+    font-size: 24px;
+    text-align: center;
+    margin: 25px 10px;
+}
+
+.app-footer {
+    font-family: 'Roboto', sans-serif;;
+    text-align: center;
+    padding: 2em 0 3em 0;
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(115, 115, 117);
+    transition: color .5s ease;
+}
+
+.foot-dark {
+    color: rgb(150, 150, 150)
+}

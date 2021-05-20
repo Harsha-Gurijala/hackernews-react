@@ -1,0 +1,91 @@
+.story-comments-wrap {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.back-link {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 17px 0;
+}
+
+.back-link > * {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(252, 77, 54);
+    transition: .3s ease;
+}
+
+.back-link > *:hover {
+    color: rgb(255, 109, 98);
+}
+
+.back-link-dark > * {
+    color: rgb(255, 122, 104);
+}
+
+.back-link-dark > *:hover {
+    color: rgb(255, 82, 59);
+}
+
+.details-comments-wrap {
+    font-family: 'Open-sans', sans-serif;
+    background-color: rgb(174, 236, 255);
+    padding-bottom: 1em;
+    transition: .5s ease;
+}
+
+.details-comm-wrap-dark {
+    background-color: rgb(45, 45, 47);
+}
+
+.details-comments-wrap > .comments-exist {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(65, 93, 119);
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(174, 236, 255);
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.details-comm-wrap-dark > .comments-exist {
+    color:rgb(165, 174, 185);;
+    background-color:rgb(45, 45, 47);
+}
+
+.details-comments-wrap > .details-comments-text {
+    font-size: 17px;
+    color: rgb(70, 70, 72);
+    background: rgb(198, 242, 255);
+    padding: 15px 17px 15px 17px;
+    transition: .5s ease;
+    overflow-x: auto;
+    word-break: break-word;
+}
+
+.details-comm-wrap-dark > .details-comments-text{
+    background-color: rgb(39, 39, 41);
+    color: rgb(195, 195, 197);
+}
+
+.fake-story-comm-details {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(148, 230, 255);
+}
+
+.fake-story-comm-det-dark {
+    background-color: rgb(62, 62, 65);
+}
+
+@media only screen and (min-width: 1340px) {
+
+    .details-comments-wrap > .details-comments-text {
+        padding: 15px 30px 15px 30px;
+    }
+}
